@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 10vh;
+}
+.logo__name{
+    color: #fff;
+    padding: 0 1rem;
+}
+nav{
+    margin: 1rem;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.btn a{
+    background-color: white;
+    color: red;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 1rem;
+
+}
+#btn2{
+    background-color: white;
+    color: red;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 1rem;
+
+}
+.hamburger__menu{
+    font: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+#openMenu{
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+#openMenu{
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+main{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: blue;
+    height: 60vh;
+    color: white;
+    cursor: pointer;
+    padding: 10rem;
+}
+footer{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: green;
+    height: 30vh;
+    color: white;
+    cursor: pointer;
+    padding: 5rem;
+}
+@media(max-width: 883px){
+    nav .mainMenu{
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: orangered;
+        display: none;
+    }
+    #openMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #openMenu{
+        display: block;
+    }
+    nav li a{
+        padding: 1.2rem;
+    }
+    #btn1{
+        display: none;
+    }
+    main{
+        padding: 10rem 5rem;
+    }
+    footer{
+        padding: 5rem 1rem;
+    }
+}
+@media(min-width: 884px) and (max-width: 2040px){
+    .hamburger__menu{
+        display: none;
+    }
+    #btn2{
+        display: none;
+    }
+}
